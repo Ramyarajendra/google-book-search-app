@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 const BookItem = ({ book }) => {
     const classes = useStyles()
-    {console.log(book,'book')}
     return (
         <Grid item xs={12} md={4} >
             <Card className={classes.root}>

@@ -8,7 +8,6 @@ const initialState = {
 const booksReducer = (state = initialState, action) => {
     switch (action.type) {
         case SEARCH_BOOKS:
-            console.log('actionnnn', action.payload)
             const allbooks = Object.values(
                 action.payload.concat(state.books).reduce((r, o) => {
                     r[o.id] = o;
